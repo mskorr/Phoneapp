@@ -13,7 +13,7 @@
         <script>
             $(document).on('pageshow', '#index', function (e, data) {
             
-            
+            var contentString = "<div onclick='newfunction()' id='noooop'>فريش هارفست</div>";
                 //            38.5360178,-90.514203
                 // Create a map object and specify the DOM element for display.
             
@@ -36,7 +36,7 @@
                         
                             infoWindow.setPosition(pos);
                             //            infoWindow.backgroundColor;
-                            infoWindow.setContent("المخازن");
+                            infoWindow.setContent(contentString);
                             map.setCenter(pos);
                         }, function() {
                             handleLocationError(true, infoWindow, map.getCenter());
@@ -53,10 +53,16 @@
                         'Error: The Geolocation service failed.' :
                                 'Error: Your browser doesn\'t support geolocation.');
                     }
-                
+                    
+                  
                 
                 }, 1); 
             });
+             function newfunction()
+                   {
+                       $('#floating-panel').show();
+                   }
+                
         </script>
     </head>
         
@@ -83,6 +89,25 @@
                 height: 100px !important;  
                 line-height: 70px;
             }
+            #floating-panel {
+  position: absolute;
+/*  top: 10px;
+  left: 25%;*/
+  z-index: 5;
+/*  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;*/
+}
+
+      #floating-panel {
+           margin-left: -15px;
+    width: 399px;
+    margin-top: 349px;
+      }
             /*#header_edited
             {
                     font-size: 1em;
@@ -102,14 +127,19 @@
             
             <div data-theme="b" data-role="header" >
                 <!--<img src="img/logo.png" alt=""/>-->
-                <a href="index.html" data-icon="delete">Cancel</a>
+                <!--<a href="index.html" data-icon="delete">Cancel</a>-->
                 <h1>Edit ContactContactContactContactContact</h1>
-                <a href="index.html" data-icon="check" data-theme="b">Save</a>
+                <!--<a href="index.html" data-icon="check" data-theme="b">Save</a>-->
             </div>
      
             <div  data-role="content" id="content">
+                  
+                <img style="display:none" id="floating-panel" src="img/details.PNG" alt=""/>
+               
                 <div id="map_canvas" style="height:100%"></div>
-            </div>
+                
+              
+            </div> 
                 
                 
             <div style="height: 62px" data-theme="a" data-role="footer" data-position="fixed">
