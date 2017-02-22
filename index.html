@@ -15,7 +15,7 @@
         
     <body>
         <style>
-            #map_2
+            #content_image
             {
                 width: 100%;
                 margin-left: -17px;
@@ -31,67 +31,439 @@
                 /*margin-left: -2px;*/
             }
             
-            #header
+            #header  
             {
                 width:  100%;
             }
             
-            #card_button
+            #maps_button_2
             {
-                    position: absolute;
-                    margin-left: 243px;
-                    margin-top: -59px;
-                    width: 11px;
-                    /*display: none;*/
+                position: absolute;
+                margin-left: 214px;
+                margin-top: 425px;
+                width: 88px;
+                opacity: -1.5;
+                /*visibility: hidden;*/ 
+                /*display: none;*/
+                /*display: none;*/
             }
             
-            #card_info_one
+            #rate_experience_button
             {
-                        position: fixed;
-                        margin-left: -16px;
-                        margin-top: -24px;
-                        width: 100%;
-                        height: 80%;
-                    /*display: none;*/
+                margin-top: 30px;
+                width: 103px;
+                margin-left: 190px;
+                opacity: -1.5; 
+                height: 92px;
+                
+            }
+            
+            #rate_shop_button
+            {
+                margin-top: 393px;
+                width: 262px;
+                margin-left: 15px;
+                opacity: -1.5;
+            }
+            #smile_button
+            {
+                position: absolute;
+                margin-left: 72px;
+                margin-top: -59px;
+                width: 11px;
+                opacity: -1.5;
+            }
+            
+            
+            #product_detail_button
+            {
+                position: absolute;
+                margin-left: -6px;
+                margin-top: 23px;
+                width: 66px;
+                opacity: -1.5;
+            }
+            
+            #dollar_button
+            {
+                position: absolute;
+                margin-left: -6px;
+                margin-top: 293px;
+                width: 11px;
+                opacity: -1.5;
+                /*visibility: hidden;*/ 
+                /*display: none;*/
+                /*display: none;*/
+            }
+            
+            #ratings_button
+            {
+                position: absolute;
+                margin-left: 48px;
+                margin-top: 293px;
+                width: 11px;
+                opacity: -1.5;
+                /*visibility: hidden;*/ 
+                /*display: none;*/
+                /*display: none;*/
+            }
+            
+            
+            #maps_button
+            {
+                position: absolute;
+                margin-left: 285px;
+                margin-top: 298px;
+                width: 11px;
+                opacity: -1.5;
+                /*visibility: hidden;*/ 
+                /*display: none;*/
+                /*display: none;*/
+            }
+            
+            #shop_image_detail
+            {
+                position: absolute;
+                margin-left: 32px;
+                margin-top: 377px;
+                width: 220px;
+                height: 75px;
+                opacity: -1.5;
+                /* visibility: hidden; */
+                /* display: none; */
+                /* display: none; */  
+            }
+            
+            #shop_image_detail_2
+            {
+                position: absolute;
+                margin-left: 77px;
+                margin-top: -14px;
+                width: 220px;
+                height: 75px;
+                opacity: -1.5;
+                /* visibility: hidden; */
+                /* display: none; */
+                /* display: none; */  
+            }
+            
+            #shop_images_button
+            {
+                position: absolute;
+                margin-left: 321px;
+                margin-top: 343px;
+                width: 3px;
+                opacity: -1.5;
+                /* visibility: hidden; */
+                /* display: none; */
+                /* display: none; */
+            }
+            
+            #card_button
+            {
+                position: absolute;
+                margin-left: 243px;
+                margin-top: -59px;
+                width: 11px;
+                opacity: -1.5;
+                /*visibility: hidden;*/ 
+                /*display: none;*/
+                /*display: none;*/
+            }
+            
+            #back_to_home_button
+            {
+                position: absolute;
+                margin-left: 3px;
+                margin-top: -26px;
+                width: 11px;
+                opacity: -1.5;
+                /*visibility: hidden;*/ 
+                /*display: none;*/
+                /*display: none;*/
+            }
+            
+            #home_button
+            {
+                position: absolute;
+                margin-left: 156px;
+                margin-top: -59px;
+                width: 11px;
+                opacity: -1.5;
+                /*visibility: hidden;*/ 
+                /*display: none;*/
+                /*display: none;*/
+            }
+            
+            #content_image
+            {
+                position: fixed;
+                margin-left: -16px;
+                margin-top: -24px;
+                width: 100%;
+                height: 80%;
+                /*display: none;*/      
             }
         </style>
         
         <!--Page one: see initial map and retailer-->
-        <div data-role="page" id="index">
+        <div data-role="page" id="pageone">
             <div data-role="header">
                 <img id="header" src="img/header.PNG" alt=""/>
             </div>
+            
             <div data-role="content" id="content">
-                <img  id="map_2" src="img/2ndmap.PNG" alt=""/>
-                    
+                <img  id="content_image" src="img/page_1.PNG" alt=""/>
+                <a  id="shop_images_button" href="#pagetwo" class="ui-btn">Button</a>   
+                <a  id="shop_image_detail" href="#pagethree" class="ui-btn">Button</a>   
                 <!--<div id="map_canvas" style="height:100%"></div>-->
+            </div>
+            
+            
+            <div style="height: 62px" data-theme="a" data-role="footer" data-position="fixed">
+                <img  id="footer" src="img/footer1.PNG" alt=""/> 
+                <a  id="smile_button" href="#pageeight" class="ui-btn">hell</a>
+                <a  id="card_button" href="#pageeleven" class="ui-btn"></a>
+            </div>
+        </div> 
+        
+        <!--page 2 :  see shop images-->
+        <div data-role="page" id="pagetwo">
+            <div data-role="header">
+                <img id="header" src="img/header.PNG" alt=""/>
+            </div>
+            
+            <div data-role="content" id="content">
+                <!--<img  id="page_2" src="img/2ndmap.PNG" alt=""/>-->
+                
+                <img id="content_image" src="img/page_2.PNG" alt=""/>
+                <a  id="back_to_home_button" href="#pageone" class="ui-btn">Button</a>
+                <a  id="shop_image_detail_2" href="#pagethree" class="ui-btn">Button</a> 
+                
             </div>
                 
                 
             <div style="height: 62px" data-theme="a" data-role="footer" data-position="fixed">
                 <img  id="footer" src="img/footer1.PNG" alt=""/> 
-                <a  id="card_button" href="#pagetwo" class="ui-btn">Button</a>
+                <a  id="smile_button" href="#pageeight" class="ui-btn">hell</a>
+                <a  id="card_button" href="#pageeleven" class="ui-btn"></a>
+                <a  id="home_button" href="#pageone" class="ui-btn">Button</a>
             </div>
         </div> 
-         
-        <!--page 2: see card loading information-->
-           <div data-role="page" id="pagetwo">
+        
+        
+        <!--page 3 :  see shop detail-->   
+        <div data-role="page" id="pagethree">
             <div data-role="header">
                 <img id="header" src="img/header.PNG" alt=""/>
             </div>
-                  
+            
+            <div data-role="content" id="content">
+                <!--<img  id="page_2" src="img/2ndmap.PNG" alt=""/>-->
+                
+                <img id="content_image" src="img/page_3.PNG" alt=""/>
+                <a  id="back_to_home_button" href="#pagetwo" class="ui-btn">Button</a>
+                <a  id="maps_button" href="#pagefive" class="ui-btn">maps</a>
+                <a  id="ratings_button" href="#pagefour" class="ui-btn">ratings</a>
+                <a  id="dollar_button" href="#pagesix" class="ui-btn">ratings</a>
+                    
+            </div>     
+                
+            
+            <div style="height: 62px" data-theme="a" data-role="footer" data-position="fixed">
+                <img  id="footer" src="img/footer1.PNG" alt=""/> 
+                <a  id="smile_button" href="#pageeight" class="ui-btn">hell</a>
+                <a  id="card_button" href="#pageeleven" class="ui-btn"></a>
+                <a  id="home_button" href="#pageone" class="ui-btn">Button</a>
+            </div>
+        </div> 
+            
+        
+        <!--page 4 :  see shop detail-->   
+        <div data-role="page" id="pagefour">
+            <div data-role="header"> 
+                <img id="header" src="img/header.PNG" alt=""/>
+            </div>
+                
+            <div data-role="content" id="content">
+                <!--<img  id="page_2" src="img/2ndmap.PNG" alt=""/>-->
+                
+                <img id="content_image" src="img/page_4.png" alt=""/>
+                <a  id="back_to_home_button" href="#pagethree" class="ui-btn">Button</a>
+                <a  id="maps_button_2" href="#pagefive" class="ui-btn">maps</a>
+                    
+            </div>   
+                
+            
+            <div style="height: 62px" data-theme="a" data-role="footer" data-position="fixed">
+                <img  id="footer" src="img/footer1.PNG" alt=""/> 
+                <a  id="smile_button" href="#pageeight" class="ui-btn">hell</a>
+                <a  id="card_button" href="#pageeleven" class="ui-btn"></a>
+                <a  id="home_button" href="#pageone" class="ui-btn">Button</a>
+            </div>
+        </div> 
+            
+            
+        <!--page 5 :  see travel details-->   
+        <div data-role="page" id="pagefive">
+            <div data-role="header">
+                <img id="header" src="img/header.PNG" alt=""/>
+            </div>
+            
+            <div data-role="content" id="content">
+                <!--<img  id="page_2" src="img/2ndmap.PNG" alt=""/>-->
+                
+                <img id="content_image" src="img/page_5.PNG" alt=""/>
+                <a  id="back_to_home_button" href="#pagethree" class="ui-btn">Button</a>
+                    
+            </div>   
+                
+            
+            <div style="height: 62px" data-theme="a" data-role="footer" data-position="fixed">
+                <img  id="footer" src="img/footer1.PNG" alt=""/> 
+                <a  id="smile_button" href="#pageeight" class="ui-btn">hell</a>
+                <a  id="card_button" href="#pageeleven" class="ui-btn"></a>
+                <a  id="home_button" href="#pageone" class="ui-btn">Button</a>
+            </div>
+        </div>
+        
+        <!--page 6 :  see store products-->   
+        <div data-role="page" id="pagesix">
+            <div data-role="header">
+                <img id="header" src="img/header.PNG" alt=""/>
+            </div>
+            
+            <div data-role="content" id="content">
+                <!--<img  id="page_2" src="img/2ndmap.PNG" alt=""/>-->
+                
+                <img id="content_image" src="img/page_6.PNG" alt=""/>
+                <a  id="back_to_home_button" href="#pagethree" class="ui-btn">Button</a>
+                <a  id="product_detail_button" href="#pageseven" class="ui-btn">Button</a>
+                    
+            </div>   
+                
+            
+            <div style="height: 62px" data-theme="a" data-role="footer" data-position="fixed">
+                <img  id="footer" src="img/footer1.PNG" alt=""/> 
+                <a  id="smile_button" href="#pageeight" class="ui-btn">hell</a>
+                <a  id="card_button" href="#pageeleven" class="ui-btn"></a>
+                <a  id="home_button" href="#pageone" class="ui-btn">Button</a>
+            </div>
+        </div>
+        
+        
+        <!--page 7 :  see product  details-->   
+        <div data-role="page" id="pageseven">
+            <div data-role="header">
+                <img id="header" src="img/header.PNG" alt=""/>
+            </div>
+            
+            <div data-role="content" id="content">
+                <img id="content_image" src="img/page_7.PNG" alt=""/>
+                <a  id="back_to_home_button" href="#pagesix" class="ui-btn">Button</a>
+                <!--<a  id="" href="#pagethree" class="ui-btn">Button</a>-->
+                    
+            </div>   
+                
+            
+            <div style="height: 62px" data-theme="a" data-role="footer" data-position="fixed">
+                <img  id="footer" src="img/footer1.PNG" alt=""/> 
+                <a  id="smile_button" href="#pageeight" class="ui-btn">hell</a>
+                <a  id="card_button" href="#pageeleven" class="ui-btn"></a>
+                <a  id="home_button" href="#pageone" class="ui-btn">Button</a>
+            </div>
+        </div>
+        
+        <!--page 8 :  survey?????-->   
+        <div data-role="page" id="pageeight">
+            <div data-role="header">
+                <img id="header" src="img/header.PNG" alt=""/>
+            </div>
+            
+            <div data-role="content" id="content">
+                <img id="content_image" src="img/page_8.PNG" alt=""/>
+                <a  id="back_to_home_button" href="#pageone" class="ui-btn">Button</a>
+                <a  id="rate_shop_button" href="#pagenine" class="ui-btn">Button</a>
+                    
+            </div>   
+                
+            
+            <div style="height: 62px" data-theme="a" data-role="footer" data-position="fixed">
+                <img  id="footer" src="img/footer_3.PNG" alt=""/> 
+                <!--<a  id="smile_button" href="#pageeight" class="ui-btn">hell</a>-->
+                <a  id="card_button" href="#pageeleven" class="ui-btn"></a>
+                <a  id="home_button" href="#pageone" class="ui-btn">Button</a>
+            </div>
+        </div>   
+            
+            
+        <!--page 9 :  rate a shop-->   
+        <div data-role="page" id="pagenine">
+            <div data-role="header">
+                <img id="header" src="img/header.PNG" alt=""/>
+            </div>
+            
+            <div data-role="content" id="content">
+                <img id="content_image" src="img/page_9.PNG" alt=""/>
+                <a  id="back_to_home_button" href="#pageeight" class="ui-btn">Button</a>
+                <a  id="rate_experience_button" href="#pageten" class="ui-btn">Button</a>
+                    
+            </div>   
+                
+            
+            <div style="height: 62px" data-theme="a" data-role="footer" data-position="fixed">
+                <img  id="footer" src="img/footer_3.PNG" alt=""/> 
+                <!--<a  id="smile_button" href="#pageeight" class="ui-btn">hell</a>-->
+                <a  id="card_button" href="#pageeleven" class="ui-btn"></a>
+                <a  id="home_button" href="#pageone" class="ui-btn">Button</a>
+            </div>
+        </div>   
+        
+                <!--page 10 :  shop experience-->   
+        <div data-role="page" id="pageten">
+            <div data-role="header">
+                <img id="header" src="img/header.PNG" alt=""/>
+            </div>
+            
+            <div data-role="content" id="content">
+                <img id="content_image" src="img/page_10.PNG" alt=""/>
+                <a  id="back_to_home_button" href="#pagenine" class="ui-btn">Button</a>
+                <!--<a  id="rate_experience_button" href="#pageten" class="ui-btn">Button</a>-->
+                    
+            </div>   
+                
+            
+            <div style="height: 62px" data-theme="a" data-role="footer" data-position="fixed">
+                <img  id="footer" src="img/footer_3.PNG" alt=""/> 
+                <!--<a  id="smile_button" href="#pageeight" class="ui-btn">hell</a>-->
+                <a  id="card_button" href="#pageeleven" class="ui-btn"></a>
+                <a  id="home_button" href="#pageone" class="ui-btn">Button</a>
+            </div>
+        </div>
+        
+        <!--page 11: see card loading information-->
+        <div data-role="page" id="pageeleven">
+            <div data-role="header">
+                <img id="header" src="img/header.PNG" alt=""/>
+            </div>
+            
             <div data-role="content" id="content">
                 <!--<img  id="map_2" src="img/2ndmap.PNG" alt=""/>-->
-                <img id="card_info_one" src="img/card_info1.PNG" alt=""/>
+                <img id="content_image" src="img/card_info1.PNG" alt=""/>
                 <!--<div id="map_canvas" style="height:100%"></div>-->
             </div>
                 
-                  
+            
             <div style="height: 62px" data-theme="a" data-role="footer" data-position="fixed">
                 <!--<img  src="img/footer1.PNG" alt=""/>-->
+                
                 <img id="footer" src="img/footer_2.PNG" alt=""/>
+                <a  id="smile_button" href="#pageeight" class="ui-btn">hell</a>
+                <a  id="home_button" href="#pageone" class="ui-btn">Button</a>
             </div>
         </div>
+        
+        
         <script> 
             function trigger()
             {
